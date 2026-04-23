@@ -78,7 +78,15 @@ export default function App() {
 
   const [accounts, setAccounts] = useState<Account[]>([]);
   const [transactions, setTransactions] = useState<Transaction[]>([]);
-  const [currencies, setCurrencies] = useState<Currency[]>([]);
+  const [currencies, setCurrencies] = useState([
+    { Currency_Code: 'EGP', Exchange_Rate_to_EGP: 1 },
+    { Currency_Code: 'USD', Exchange_Rate_to_EGP: 48 },
+    { Currency_Code: 'EUR', Exchange_Rate_to_EGP: 52 },
+    { Currency_Code: 'SAR', Exchange_Rate_to_EGP: 12.8 },
+    { Currency_Code: 'GBP', Exchange_Rate_to_EGP: 60 },
+    { Currency_Code: 'AED', Exchange_Rate_to_EGP: 13.1 },
+    { Currency_Code: 'GOLD', Exchange_Rate_to_EGP: 3100 }
+  ]);
   const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState<'dashboard' | 'accounts' | 'transactions' | 'currencies' | 'history' | 'settings' | 'reports' | 'customers'>('dashboard');
 
