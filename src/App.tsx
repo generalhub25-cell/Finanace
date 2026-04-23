@@ -115,7 +115,6 @@ export default function App() {
     } else {
         setLoginError(true);
     }
-};
   };
 
   const handleLogout = () => {
