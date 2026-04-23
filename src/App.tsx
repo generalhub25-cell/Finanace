@@ -102,26 +102,20 @@ export default function App() {
       message: message || 'هل أنت متأكد من رغبتك في حذف هذه البيانات؟',
     });
   };
-
-  const handleLogin = async (e: React.FormEvent) => {
-    e.preventDefault();
-    try {
-      const handleLogin = (e: React.FormEvent) => {
+  const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
     if (password === "Ahmed2026") {
-        setIsAuthenticated(true);
-        localStorage.setItem('is_auth', 'true');
-        setLoginError(false);
+      setIsAuthenticated(true);
+      localStorage.setItem('is_auth', 'true');
+      setLoginError(false);
     } else {
-        setLoginError(true);
+      setLoginError(true);
     }
   };
-
   const handleLogout = () => {
     setIsAuthenticated(false);
     localStorage.removeItem('is_auth');
   };
-
   const fetchData = async () => {
     if (!isAuthenticated) return;
     const controller = new AbortController();
