@@ -1956,18 +1956,19 @@ function AccountsView({ accounts, currencies, onUpdate, requestConfirm }: { acco
             </div>
             <div>
               <label className="block text-xs font-bold text-gray-500 uppercase mb-1">العملة</label>
-              <select 
-                value={currency} 
-                onChange={e => setCurrency(e.target.value)}
-                className="w-full px-4 py-2 border border-gray-200 rounded-lg outline-none"
-              >
-                <option value="EGP">جنيه مصري (EGP)</option>
-<option value="USD">دولار أمريكي (USD)</option>
-<option value="AED">درهم إماراتي (AED)</option>
-<option value="SAR">ريال سعودي (SAR)</option>
-<option value="EUR">يورو (EUR)</option>
-<option value="GBP">جنيه إسترليني (GBP)</option>
-              </select>
+              <select
+  value={currency}
+  onChange={e => setCurrency(e.target.value)}
+  className="w-full px-4 py-2 border border-gray-200 rounded-lg outline-none"
+>
+  <option value="">اختر العملة</option>
+  <option value="EGP">جنيه مصري (EGP)</option>
+  <option value="USD">دولار أمريكي (USD)</option>
+  <option value="AED">درهم إماراتي (AED)</option>
+  <option value="SAR">ريال سعودي (SAR)</option>
+  <option value="EUR">يورو (EUR)</option>
+  <option value="GBP">جنيه إسترليني (GBP)</option>
+</select>
             </div>
           </div>
 
