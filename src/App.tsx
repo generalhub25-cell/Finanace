@@ -1960,14 +1960,15 @@ function AccountsView({ accounts, currencies, onUpdate, requestConfirm }: { acco
   onChange={e => setCurrency(e.target.value)}
   className="w-full px-4 py-2 border border-gray-200 rounded-lg outline-none"
 >
-  <option value="">اختر العملة</option>
-  <option value="EGP">جنيه مصري (EGP)</option>
-  <option value="USD">دولار أمريكي (USD)</option>
-  <option value="AED">درهم إماراتي (AED)</option>
-  <option value="SAR">ريال سعودي (SAR)</option>
-  <option value="EUR">يورو (EUR)</option>
-  <option value="GBP">جنيه إسترليني (GBP)</option>
-</select>
+  const [currencies, setCurrencies] = useState([
+    { Currency_Code: 'EGP', Exchange_Rate_to_EGP: 1 },
+    { Currency_Code: 'USD', Exchange_Rate_to_EGP: 48 },
+    { Currency_Code: 'EUR', Exchange_Rate_to_EGP: 52 },
+    { Currency_Code: 'SAR', Exchange_Rate_to_EGP: 12.8 },
+    { Currency_Code: 'GBP', Exchange_Rate_to_EGP: 60 },
+    { Currency_Code: 'AED', Exchange_Rate_to_EGP: 13.1 },
+    { Currency_Code: 'GOLD', Exchange_Rate_to_EGP: 3100 }
+  ]);
           </div>
 
           <hr className="border-gray-100" />
