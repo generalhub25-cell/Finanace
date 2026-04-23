@@ -106,13 +106,16 @@ export default function App() {
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      if (password === "Ahmed2026") {
-    setIsAuthenticated(true);
-    localStorage.setItem('is_auth', 'true');
-    setLoginError(false);
-} else {
-    setLoginError(true);
-}
+      const handleLogin = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (password === "Ahmed2026") {
+        setIsAuthenticated(true);
+        localStorage.setItem('is_auth', 'true');
+        setLoginError(false);
+    } else {
+        setLoginError(true);
+    }
+};
   };
 
   const handleLogout = () => {
