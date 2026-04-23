@@ -79,12 +79,12 @@ export default function App() {
   const [accounts, setAccounts] = useState<Account[]>([]);
   const [transactions, setTransactions] = useState<Transaction[]>([]);
   const [currencies] = useState([
-    { id: '1', code: 'EGP', name: 'Egyptian Pound', symbol: 'ج.م' },
-    { id: '2', code: 'USD', name: 'US Dollar', symbol: '$' },
-    { id: '3', code: 'AED', name: 'UAE Dirham', symbol: 'د.إ' },
-    { id: '4', code: 'SAR', name: 'Saudi Riyal', symbol: 'ر.س' },
-    { id: '5', code: 'EUR', name: 'Euro', symbol: '€' },
-    { id: '6', code: 'GBP', name: 'British Pound', symbol: '£' }
+    { id: '1', code: 'EGP', name: 'جنيه مصري', symbol: 'ج.م' },
+    { id: '2', code: 'USD', name: 'دولار أمريكي', symbol: '$' },
+    { id: '3', code: 'AED', name: 'درهم إماراتي', symbol: 'د.إ' },
+    { id: '4', code: 'SAR', name: 'ريال سعودي', symbol: 'ر.س' },
+    { id: '5', code: 'EUR', name: 'يورو', symbol: '€' },
+    { id: '6', code: 'GBP', name: 'جنيه إسترليني', symbol: '£' }
   ]);
   const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState<'dashboard' | 'accounts' | 'transactions' | 'currencies' | 'history' | 'settings' | 'reports' | 'customers'>('dashboard');
