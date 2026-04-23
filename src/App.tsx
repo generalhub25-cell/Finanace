@@ -1961,7 +1961,12 @@ function AccountsView({ accounts, currencies, onUpdate, requestConfirm }: { acco
                 onChange={e => setCurrency(e.target.value)}
                 className="w-full px-4 py-2 border border-gray-200 rounded-lg outline-none"
               >
-                {filteredCurrencies.map(c => <option key={c.Currency_Code} value={c.Currency_Code}>{c.Currency_Code}</option>)}
+                <option value="EGP">جنيه مصري (EGP)</option>
+<option value="USD">دولار أمريكي (USD)</option>
+<option value="AED">درهم إماراتي (AED)</option>
+<option value="SAR">ريال سعودي (SAR)</option>
+<option value="EUR">يورو (EUR)</option>
+<option value="GBP">جنيه إسترليني (GBP)</option>
               </select>
             </div>
           </div>
