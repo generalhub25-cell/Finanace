@@ -106,23 +106,13 @@ export default function App() {
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const res = await fetch('/api/login', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ password })
-      });
-      
-      if (res.ok) {
-        setIsAuthenticated(true);
-        localStorage.setItem('is_auth', 'true');
-        setLoginError(false);
-      } else {
-        setLoginError(true);
-      }
-    } catch (error) {
-      console.error('Login error:', error);
-      toast.error('حدث خطأ أثناء محاولة تسجيل الدخول');
-    }
+      if (password === "Ahmed2026") {
+    setIsAuthenticated(true);
+    localStorage.setItem('is_auth', 'true');
+    setLoginError(false);
+} else {
+    setLoginError(true);
+}
   };
 
   const handleLogout = () => {
