@@ -1955,7 +1955,6 @@ function AccountsView({ accounts, currencies, onUpdate, requestConfirm }: { acco
               </select>
             </div>
             <div>
-              <label className="block text-xs font-bold text-gray-500 uppercase mb-1">العملة</label>
               <select
   value={currency}
   onChange={e => setCurrency(e.target.value)}
@@ -1969,7 +1968,6 @@ function AccountsView({ accounts, currencies, onUpdate, requestConfirm }: { acco
   <option value="EUR">يورو (EUR)</option>
   <option value="GBP">جنيه إسترليني (GBP)</option>
 </select>
-            </div>
           </div>
 
           <hr className="border-gray-100" />
