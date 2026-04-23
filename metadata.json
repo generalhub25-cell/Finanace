@@ -1,0 +1,5 @@
+{
+  "name": "Finance Manager Pro",
+  "description": "A comprehensive finance management application for tracking banks, safes, customers, and gold balances with multi-currency support.",
+  "requestFramePermissions": []
+}
